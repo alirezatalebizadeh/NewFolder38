@@ -2,18 +2,19 @@
 
 
 
+@font-face {
+    font-family: Lalezar;
+    src: url('../font/lalezar/Lalezar-Regular.ttf');
+}
 
+@font-face {
+    font-family: Vazir;
+    src: url('../font/vazir/Vazir-Medium-FD.ttf');
+    font-weight: normal;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@font-face {
+    font-family: Vazir;
+    src: url('../font/vazir/Vazir-Regular-FD.ttf');
+    font-weight: lighter;
+}
