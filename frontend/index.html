@@ -15,6 +15,7 @@
     <title>My Irancell</title>
   </head>
   <body>
+    <!-- ! start left site -->
     <div class="left_side lalehzar_font">
       <!--start Profile Box -->
       <div class="profile_box d-flex align-items-center lalehzar_font">
@@ -84,11 +85,31 @@
       </div>
       <!-- end sim cart charge -->
     </div>
+    <!-- ! end left site -->
+
+    <!-- ! start finish center -->
+    <main class="main">
+      <h1 class="main_title lalehzar_font">صفحه اصلی</h1>
+      <section class="main_overlay d-flex flex-column">
+        <h1 class="lalehzar_font">این همه بسته بی سابقه هست</h1>
+        <button class="btn">اینجا چه خبره!</button>
+      </section>
+
+      <section class="chart">
+        <h1 class="lalehzar_font">نمودار میزان مصرف کل</h1>
+
+        <canvas id="my_chart" height="100px">
+          your browser does not support canvas
+        </canvas>
+      </section>
+    </main>
+    <!-- ! end finish center -->
 
     <!-- ! lib -->
 
     <script src="./content/lib/bootstrap/bootstrap.min.js"></script>
     <script src="./content/lib/font awsem/all.min.js"></script>
     <script src="./content/lib/chart js/chart.min.js"></script>
+    <script src="./content/js/index.js" type="module"></script>
   </body>
 </html>
