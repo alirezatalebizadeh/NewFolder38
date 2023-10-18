@@ -1,0 +1,20 @@
+{
+  "name": "pane-irancell",
+  "version": "1.0.0",
+  "description": "a panel for irancell that created with api in myswl and express js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "my-irancell"
+  ],
+  "author": "alireza talebizadeh",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}

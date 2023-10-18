@@ -1,0 +1,24 @@
+
+//structure of db
+
+
+tables ====>
+
+users {id , firstName , lastName , profile , charge  }
+
+services { id , icon , title , max_date , isActive  }
+
+recommended_packet { id , title , off , price , max_date, user_ID } 
+
+sales {id , buy_date , max_date , title, off , price , user_ID }
+
+
+
+
+
+
+
+
+
+
+
