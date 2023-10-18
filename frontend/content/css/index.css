@@ -18,6 +18,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .profile_box {
@@ -153,8 +155,9 @@ body {
 }
 
 .app_irancell_logo {
-    width: 120px;
+    width: 80px;
     image-rendering: pixelated;
+    transform: rotate(10deg);
 }
 
 .download_app_box h1 {
@@ -183,7 +186,7 @@ body {
     height: 350px;
     margin-top: 20px;
     border-radius: 20px;
-    background: url('../../content/img/irancell\ logo.png') center;
+    background: url('../../content/img/background.png') center;
     background-size: cover;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -230,7 +233,158 @@ body {
     top: 20px;
     right: 20px;
     font-size: 1.3rem;
-    
+
 }
 
+#my_chart {
+    /* width: 100%; */
+}
+
+.recommend-packate {
+    background-color: var(--white-50);
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 30px;
+}
+
+.recommend_packate_title {
+    font-size: 1.3rem;
+
+}
+
+.recommend_packate_table {
+    color: var(--gray-650);
+    outline: none;
+    border-radius: 20px;
+}
+
+.recommend_packate_table tr {
+    text-align: center;
+}
+
+.recommend_packate_table tr:not(:first-child) {
+    border-top: 3px solid var(--white-200);
+}
+
+.recommend_packate_table th,
+.recommend_packate_table td {
+    padding: 20px;
+}
+
+
+
+.buy_packate_btn {
+    background-color: var(--gold-400);
+    font-size: 1rem;
+    padding: 5px 30px;
+    color: var(--white-50);
+    box-shadow: 0 0 10px var(--gold-400);
+    outline: none;
+    border: none;
+}
+
+
 /*  ! end finish center  */
+/*  ! start sidebar  */
+.sidebar {
+    width: 500px;
+    height: 100vh;
+    background-color: var(--white-50);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar_brand {
+    margin-bottom: 30px;
+}
+
+.sidebar_brand img {
+    transform: rotate(15deg);
+}
+
+.sidebar_brand span {
+    background-color: var(--gold-400);
+    padding: 5px 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+
+}
+
+
+.search_group {
+    width: 90%;
+    border: 2px solid var(--white-200);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.serach_input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+
+.search_input_icon::placeholder {
+    color: var(--white-200);
+}
+
+.search_input_icon {
+    margin-left: 10px;
+    transform: 90deg;
+    color: var(--white-200);
+    cursor: pointer;
+}
+
+.sidebar_menu {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 70px 0 0;
+
+}
+
+.sidebar_menu_item {
+    position: relative;
+    column-gap: 10px;
+    font-size: 1.2rem;
+    color: var(--gray-650);
+}
+
+.sidebar_menu_item:not(:first-child, :last-child) {
+    margin-bottom: 18px;
+
+}
+
+.sidebar_menu_item.active {
+    color: var(--gray-700);
+}
+
+.sidebar_menu_item.active::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -80%;
+    width: 3px;
+    height: 50px;
+    background-color: var(--gold-400);
+}
+
+.sidebar_menu_item.active span {
+    color: var(--gold-400);
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar_menu_item_break {
+    margin: 27px 0 14px;
+    font-size: 0.8rem;
+    color: var(--white-200);
+}
+
+.sidebar_menu_item a{
+    color: var(--gray-650);
+}
+
+/*  ! end sidebar  */

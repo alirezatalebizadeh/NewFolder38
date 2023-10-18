@@ -14,10 +14,10 @@
     <link rel="icon" href="./content/img/irancell logo.png" />
     <title>My Irancell</title>
   </head>
-  <body>
+  <body class="container-fluid mx-auto">
     <!-- ! start left site -->
     <div class="left_side lalehzar_font">
-      <!--start Profile Box -->
+      <!--!start Profile Box -->
       <div class="profile_box d-flex align-items-center lalehzar_font">
         <div class="profile_warpper d-flex">
           <img
@@ -31,9 +31,9 @@
           <h5 class="user_number">+989036439883</h5>
         </div>
       </div>
-      <!-- end Profile Box -->
+      <!--! end Profile Box -->
 
-      <!-- start sim cart charge -->
+      <!-- !start sim cart charge -->
       <div class="sim_cart_charge_box">
         <h1 class="sim_cart_charge_title">شارژ باقی مانده ی سیم کارت</h1>
         <div class="d-flex flex-column align-items-center">
@@ -76,14 +76,14 @@
           class="download_app_box d-flex align-items-center justify-content-between flex-row-reverse"
         >
           <img
-            src="https://magtech.ir/wp-content/uploads/2023/05/myirancell-main.jpg"
+            src="./content/img/myirancell-logo.png"
             alt="my-irancell-app"
             class="app_irancell_logo"
           />
           <h1>اپلیکیشن ما رو دانلود کن</h1>
         </div>
       </div>
-      <!-- end sim cart charge -->
+      <!--! end sim cart charge -->
     </div>
     <!-- ! end left site -->
 
@@ -95,15 +95,140 @@
         <button class="btn">اینجا چه خبره!</button>
       </section>
 
-      <section class="chart">
+      <section class="chart overflow-hidden">
         <h1 class="lalehzar_font">نمودار میزان مصرف کل</h1>
 
         <canvas id="my_chart" height="100px">
           your browser does not support canvas
         </canvas>
       </section>
+
+      <section class="recommend-packate">
+        <h1 class="recommend_packate_title">بسته های پیشنهادی مخصوص خود شما</h1>
+        <table class="recommend_packate_table table mt-3">
+          <tr class="vazir_fb">
+            <th>تاریخ انقضای بسته</th>
+            <th>نام بسته</th>
+            <th>تخفیف</th>
+            <th>قیمت</th>
+          </tr>
+          <tr>
+            <td>14 ابان 1402</td>
+            <td>بسته اینترنت سه ماهه</td>
+            <td>20%</td>
+            <td>130,000</td>
+            <td>
+              <button class="btn buy_packate_btn lalehzar_font">خرید</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>14 ابان 1402</td>
+            <td>بسته اینترنت سه ماهه</td>
+            <td>20%</td>
+            <td>130,000</td>
+            <td>
+              <button class="btn buy_packate_btn lalehzar_font">خرید</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>14 ابان 1402</td>
+            <td>بسته اینترنت سه ماهه</td>
+            <td>20%</td>
+            <td>130,000</td>
+            <td>
+              <button class="btn buy_packate_btn lalehzar_font">خرید</button>
+            </td>
+          </tr>
+        </table>
+      </section>
     </main>
     <!-- ! end finish center -->
+
+    <!-- ! start right site-->
+    <div class="sidebar d-flex align-items-center flex-column">
+      <h1 class="sidebar_brand d-flex align-items-center">
+        <img
+          src="./content/img/myirancell-logo.png"
+          alt="logo"
+          class="img-fluid"
+          width="40px"
+        />
+        <span class="lalehzar_font">ایرانسل من</span>
+      </h1>
+      <!-- !input -->
+      <div
+        class="search_group d-flex align-items-center justify-content-between"
+      >
+        <input
+          type="text"
+          class="serach_input"
+          placeholder="جست و جو"
+          translate="no"
+          autocomplete="off"
+        />
+        <span class="search_input_icon"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></span>
+      </div>
+
+      <!-- ! -->
+      <ul class="sidebar_menu">
+        <li class="sidebar_menu_item d-flex align-items-center active">
+          <span>
+            <i class="fa-solid fa-house"></i>
+            <a href="#">صفحه اصلی</a>
+          </span>
+        </li>
+        <li class="sidebar_menu_item_break">سرویس ها</li>
+        <li class="sidebar_menu_item d-flex align-items-center">
+          <span>
+            <i class="fa-solid fa-chart-pie"></i>
+            <a href="#">اینترنت</a>
+          </span>
+        </li>
+        <li class="sidebar_menu_item d-flex align-items-center">
+          <span>
+            <i class="fa-solid fa-chart-column"></i>
+            <a href="#">کارکرد و فروش</a>
+          </span>
+        </li>
+        <li class="sidebar_menu_item d-flex align-items-center">
+          <span>
+            <i class="fa-solid fa-bell"></i>
+            <a href="#">خدمات</a>
+          </span>
+        </li>
+        <li class="sidebar_menu_item_break">مدیریت</li>
+        <li class="sidebar_menu_item d-flex align-items-center">
+          <span>
+            <i class="fa-solid fa-chart-column"></i>
+            <a href="#">مدیریت و خدمات </a>
+          </span>
+        </li>
+        <li class="sidebar_menu_item d-flex align-items-center">
+          <span>
+            <i class="fa-solid fa-bell"></i>
+            <a href="#">مدیریت سیم کارت</a>
+          </span>
+        </li>
+        <!-- <li class="sidebar_menu_item_break"></li> -->
+        <li class="sidebar_menu_item d-flex align-items-center mt-5">
+          <span>
+            <i class="fa-solid fa-chart-column"></i>
+            <a href="#">سوالات متداول </a>
+          </span>
+        </li>
+        <li class="sidebar_menu_item d-flex align-items-center">
+          <span>
+            <i class="fa-solid fa-bell"></i>
+            <a href="#">ارتباط با ما </a>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!-- ! end right site-->
 
     <!-- ! lib -->
 

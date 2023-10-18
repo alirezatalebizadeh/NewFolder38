@@ -2,7 +2,7 @@ const initChart = (lables, data, initElement) => {
     const config = {
         type: 'line',
         data: {
-            lables: [...lables],
+            labels: [...lables],
             datasets: [{
                 backgroundColor: '#fffcef',
                 borderColor: '#fdc816',
