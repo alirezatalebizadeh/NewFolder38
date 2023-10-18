@@ -78,6 +78,83 @@ body {
     box-shadow: 0 0 8px var(--gold-400);
     border: 0;
     outline: none;
+    cursor: pointer;
 }
 
-.charge_progress {}
+.charge_progress {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    background-color: var(--gold-50);
+    margin: 25px 0;
+}
+
+.charge_progress .overlay {
+    border-radius: 50%;
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    background-color: var(--gold-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00a3ff;
+}
+
+.progress_10 {
+    background: -webkit-linear-gradient(90deg, #E4EBEC 50%, transparent 50%), -webkit-linear-gradient(right, var(--gold-400) 50%, #E4EBEC 50%);
+}
+
+
+
+.services_title {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+
+}
+
+.active_service_box {
+    column-gap: 12px;
+    color: var(--gray-600);
+    margin-bottom: 30px;
+}
+
+
+.active_servise_icon {
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(253, 199, 23, 0.2);
+    border-radius: 12px;
+    color: var(--gold-400);
+}
+
+
+.active_service_desc {
+    line-height: 25px;
+
+}
+
+
+
+.download_app_box {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    transform: translateY(-610px);
+    background-color: var(--white-50);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.app_irancell_logo {
+    width: 120px;
+    image-rendering: pixelated;
+}
+
+.download_app_box h1 {
+    font-size: 1.2rem;
+
+}
