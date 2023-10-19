@@ -7,6 +7,15 @@ const MyIrancellDb = mysql.createConnection({
 })
 
 
+MyIrancellDb.connect(err => {
+    if (err) {
+        console.log('cannected not successfully');
+    } else {
+        console.log('connected successfully');
+    }
+})
+
+
 module.exports = MyIrancellDb;
 
 
