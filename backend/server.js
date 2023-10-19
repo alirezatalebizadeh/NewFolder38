@@ -48,13 +48,13 @@ app.get('/api/services/:isActive', (req, res) => {
 
 app.get('/api/recommended-packs', (req, res) => {
     let userToken = req.headers.authorization;
-    let userID = null;
+    // let userID = null;
 
 
     getUserIdFromUserToken(userToken).then(result => {
-        userID = result[0].id;
+        // userID = result[0].id;
         // console.log(userID);
-        let getUserRecommendPacksQuery = `SELECT * FROM recommended_packet WHERE userID = ${userID}`
+        let getUserRecommendPacksQuery = `SELECT * FROM recommended_packet WHERE userID = ${result[0].id}`
 
         MyIrancellDb.query(getUserRecommendPacksQuery, (error, result) => {
             if (error) {
@@ -73,10 +73,9 @@ app.get('/api/recommended-packs', (req, res) => {
 
 app.get('/api/user-buy', (req, res) => {
     let userToken = req.headers.authorization;
-    let userID = null;
+
     getUserIdFromUserToken(userToken).then(result => {
-        userID = result[0].id;
-        let getUserBuyInfo = `SELECT * FROM sales WHERE userID = ${userID}`
+        let getUserBuyInfo = `SELECT * FROM sales WHERE userID = ${result[0].id}`
 
         MyIrancellDb.query(getUserBuyInfo, (error, result) => {
             if (error) {
