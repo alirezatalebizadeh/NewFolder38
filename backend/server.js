@@ -12,7 +12,6 @@ app.use(cors())
 
 app.get('/api/users', (req, res) => {
     let userToken = req.headers.authorization;
-    console.log(userToken);
 
     let getMainUserQuery = `SELECT * FROM users WHERE token = "${userToken}"`
 

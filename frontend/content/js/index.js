@@ -5,3 +5,5 @@ initChart(
     [500, 1000, 2300, 2600, 1600, 2900],
     document.querySelector('#my_chart').getContext('2d')
 )
+
+
