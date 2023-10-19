@@ -5,12 +5,10 @@ let userCharge = document.querySelector('.overlay')
 
 const mainUrlApi = 'http://localhost:3000/api/'
 
-
-
-
 //! get data from db and show all in dom
-window.addEventListener('load', () => {
 
+
+window.addEventListener('load', () => {
     let userToken = localStorage.getItem('userToken')
 
     fetch(`${mainUrlApi}users`, {
@@ -26,10 +24,4 @@ window.addEventListener('load', () => {
             userPhoneNumber.innerHTML = data[0].phoneNumber
             userCharge.innerHTML = data[0].charge
         })
-
-
-
-
-
-
 })

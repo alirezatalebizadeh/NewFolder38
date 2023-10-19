@@ -1,5 +1,6 @@
 
 //! get recommend packet from db
+
 window.addEventListener('load', () => {
     const mainUrlApi = 'http://localhost:3000/api/'
 
@@ -39,3 +40,5 @@ window.addEventListener('load', () => {
             }
         })
 })
+
+

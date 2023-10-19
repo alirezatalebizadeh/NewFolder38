@@ -20,6 +20,9 @@ body {
     height: 100vh;
     position: sticky;
     top: 0;
+    left: 0;
+    /* overflow-y: auto; */
+
 }
 
 .profile_box {
@@ -148,7 +151,7 @@ body {
     width: 100%;
     top: 100%;
     margin: 0 auto;
-    transform: translateY(-520%);
+    transform: translateY(-550%);
     background-color: var(--white-50);
     border-radius: 15px;
     padding: 20px;
@@ -293,6 +296,7 @@ body {
     padding: 20px 0;
     position: sticky;
     top: 0;
+    right: 0;
 }
 
 .sidebar_brand {
@@ -383,7 +387,7 @@ a {
     color: var(--white-200);
 }
 
-.sidebar_menu_item a{
+.sidebar_menu_item a {
     color: var(--gray-650);
 }
 
