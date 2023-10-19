@@ -1,0 +1,44 @@
+// how can i use api ?
+
+
+main url = http://localhost:3000/api/
+
+
+1.Get main user info 
+route: /users
+method: GET
+headers: authorization => user token
+
+
+1.Get All active / none-active services
+route: /services/:isActive
+isActive : 0 (خدمات غیرفعال) || 1 (خدمات فعال)
+method: GET
+
+1.Get main user  recommend-packs 
+route: /recommended-packs
+method: GET
+headers: authorization => user token
+
+
+
+1.Get main user packet buying
+route: /user-buy
+method: GET
+headers: authorization => user token
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
