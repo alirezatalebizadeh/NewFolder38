@@ -11,10 +11,10 @@ app.use(cors())
 
 
 app.get('/api/users', (req, res) => {
-    let userToken = req.params.authorization;
+    let userToken = req.headers.authorization;
+    console.log(userToken);
 
-
-    let getMainUserQuery = `SELECT * FROM users WHERE token = ${userToken}`
+    let getMainUserQuery = `SELECT * FROM users WHERE token = "${userToken}"`
 
     MyIrancellDb.query(getMainUserQuery, (error, result) => {
         if (error) {
@@ -38,6 +38,7 @@ app.get('/api/services/:isActive', (req, res) => {
             res.send('null')
         } else {
             res.send(result)
+            // console.log(result);
         }
     })
 })
@@ -46,25 +47,32 @@ app.get('/api/services/:isActive', (req, res) => {
 
 
 app.get('/api/recommended-packs', (req, res) => {
-    let userToken = req.params.authorization
-    let userId = getUserIdFromUserToken(userToken)
+    let userToken = req.headers.authorization;
+    let userID = null;
 
-    let getUserRecommendPacksQuery = `SELECT * FROM recommended_packet WHERE userID = ${userId}`
 
-    MyIrancellDb.query(getUserRecommendPacksQuery, (error, result) => {
-        if (error) {
-            res.send('null')
-        } else {
-            res.send(result)
-        }
+    getUserIdFromUserToken(userToken).then(result => {
+        userID = result[0].id;
+        // console.log(userID);
+        let getUserRecommendPacksQuery = `SELECT * FROM recommended_packet WHERE userID = ${userID}`
+
+        MyIrancellDb.query(getUserRecommendPacksQuery, (error, result) => {
+            if (error) {
+                res.send('null')
+            } else {
+                res.send(result)
+            }
+        })
     })
+
+
 })
 
 
 
 
 app.get('/api/user-buy', (req, res) => {
-    let userToken = req.params.authorization;
+    let userToken = req.headers.authorization;
     let userId = getUserIdFromUserToken(userToken)
 
 
