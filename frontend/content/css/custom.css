@@ -37,19 +37,3 @@ body, * {
 }
 
 /* !============ utility class============== */
-.flex {
-    display: flex;
-
-}
-
-.justify_content_center {
-    justify-content: center;
-}
-
-.align_items {
-    align-items: center;
-}
-
-.justify_content_beteen {
-    justify-content: space-between;
-}

@@ -20,7 +20,7 @@ window.addEventListener('load', () => {
         }
     }).then(res => res.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             userProfile.setAttribute('src', data[0].profile)
             userNameElem.innerHTML = `سلام ، ${data[0].firstName} ${data[0].lastName} `
             userPhoneNumber.innerHTML = data[0].phoneNumber
